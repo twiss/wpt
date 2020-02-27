@@ -121,7 +121,7 @@ class PolicyDelivery(object):
         elif obj == "anotherPolicy":
             policy_delivery = target_policy_delivery.get_another_policy(
                 supported_delivery_types[0])
-        elif type(obj) == dict:
+        elif isinstance(obj, dict):
             policy_delivery = PolicyDelivery(obj['deliveryType'], obj['key'],
                                              obj['value'])
         else:

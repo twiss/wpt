@@ -453,6 +453,36 @@
       ],
       "subresourcePolicyDeliveries": []
     },
+    "worker-classic": {
+      "sourceContextList": [
+        {
+          "sourceContextType": "top",
+          "policyDeliveries": [
+            "policy"
+          ]
+        },
+        {
+          "sourceContextType": "worker-classic",
+          "policyDeliveries": []
+        }
+      ],
+      "subresourcePolicyDeliveries": []
+    },
+    "worker-module": {
+      "sourceContextList": [
+        {
+          "sourceContextType": "top",
+          "policyDeliveries": [
+            "policy"
+          ]
+        },
+        {
+          "sourceContextType": "worker-module",
+          "policyDeliveries": []
+        }
+      ],
+      "subresourcePolicyDeliveries": []
+    },
     "worker-classic-data": {
       "sourceContextList": [
         {
@@ -479,6 +509,44 @@
         {
           "sourceContextType": "worker-module-data",
           "policyDeliveries": []
+        }
+      ],
+      "subresourcePolicyDeliveries": []
+    },
+    "sharedworker-classic": {
+      "sourceContextList": [
+        {
+          "sourceContextType": "top",
+          "policyDeliveries": []
+        },
+        {
+          "sourceContextType": "sharedworker-classic",
+          "policyDeliveries": [
+            {
+              "deliveryType": "http-rp",
+              "key": "mixedContent",
+              "value": "opt-in"
+            }
+          ]
+        }
+      ],
+      "subresourcePolicyDeliveries": []
+    },
+    "sharedworker-module": {
+      "sourceContextList": [
+        {
+          "sourceContextType": "top",
+          "policyDeliveries": []
+        },
+        {
+          "sourceContextType": "sharedworker-module",
+          "policyDeliveries": [
+            {
+              "deliveryType": "http-rp",
+              "key": "mixedContent",
+              "value": "opt-in"
+            }
+          ]
         }
       ],
       "subresourcePolicyDeliveries": []
@@ -533,8 +601,12 @@
     ],
     "source_context_list": [
       "top",
+      "worker-classic",
+      "worker-module",
       "worker-classic-data",
       "worker-module-data",
+      "sharedworker-classic",
+      "sharedworker-module",
       "sharedworker-classic-data",
       "sharedworker-module-data"
     ],
